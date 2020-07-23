@@ -2,6 +2,7 @@
 import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
+import chainWebpack from './plugin.config'
 
 const { REACT_APP_ENV } = process.env;
 
@@ -90,4 +91,5 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
+  chainWebpack
 });
